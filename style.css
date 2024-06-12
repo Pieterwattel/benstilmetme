@@ -40,22 +40,22 @@ html {
 
 @font-face {
     font-family: reviewfont;
-    src: url(/files/Noteworthy-Lt\ 2.ttf);
+    src: url(./files/Noteworthy-Lt\ 2.ttf);
 }
 
 @font-face {
     font-family: cute;
-    src: url(/files/Cutewritten-Regular.ttf);
+    src: url(./files/Cutewritten-Regular.ttf);
 }
 
 @font-face {
     font-family: hpsf;
-    src: url(/files/HPSimplified.ttf);
+    src: url(./files/HPSimplified.ttf);
 }
 
 @font-face {
     font-family: hpsfrg;
-    src: url(/files/HPSimplified_Rg.ttf);
+    src: url(./files/HPSimplified_Rg.ttf);
 }
 
 .scrolltext {
@@ -110,6 +110,7 @@ button {
     background-color: white;
     border-radius: 10px;
     font-size: 40px;
+    text-align: center;
 }
 
 .header,
