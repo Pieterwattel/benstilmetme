@@ -31,7 +31,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: calc(15px + 1vw);
 }
 
 .maincontent {
@@ -61,28 +61,30 @@
 .reviews {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
-}
-
-.review {
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
+    gap: 80px;
 }
 
 .reviewcontent {
     display: flex;
-    gap: 8%
+    gap: 20%
 }
 
 textarea{
     height: 160px;
     width: 60%;
     min-width: 260px !important;
-    margin-top: 10%;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
 button {
     margin: 20px;
+}
+
+.name {
+    font-weight: 800;
+}
+
+.reviewcontent .text {
+    font-family: 
 }
