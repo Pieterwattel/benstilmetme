@@ -1,0 +1,73 @@
+/* standard selectors */
+
+.inline {
+    display: inline;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
+}
+
+/* * {
+    outline: 2px solid red;
+} */
+
+
+/* end standard selectors */
+
+.maincontent {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.center {
+    display:flex;
+    justify-content: space-around;
+}
+
+.header {
+    margin: 80px 10% 20% 10%;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reviewcontent {
+    display: flex;
+    gap: 8%
+}
+
+textarea{
+    height: 160px;
+    width: 60%;
+    min-width: 260px !important;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 20px;
+}

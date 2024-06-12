@@ -1,0 +1,3 @@
+stuk of 3 vragen, die scrollen
+achtergrond die van kleur verandert
+automatisch comments toevoegen zodra ze gecheckt zijn
