@@ -107,15 +107,6 @@ button {
     border-radius: 10px;
 }
 
-.header,
-.scrolltext {
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function:ease-out;
-    animation-duration: 2s;
-}
-
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;

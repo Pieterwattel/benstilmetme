@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY;
     const headerHeight = document.querySelector('.header').offsetHeight;
