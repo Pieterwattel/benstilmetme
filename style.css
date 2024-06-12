@@ -29,6 +29,10 @@
 
 /* end standard selectors */
 
+html {
+    scroll-behavior: smooth
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(15px + 1vw);
@@ -105,6 +109,7 @@ button {
     margin: 90px;
     background-color: white;
     border-radius: 10px;
+    font-size: 40px;
 }
 
 .header,
@@ -132,9 +137,9 @@ button {
     content: ;
     padding-left: 6px;
     padding-right: 6px;
-    border: 3px solid rgb(71, 71, 71);
+    /*border: 3px solid rgb(71, 71, 71);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 10px;*/
 }
 
 .reviewcontent .text {
