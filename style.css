@@ -79,7 +79,7 @@ body {
 
 .center {
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 100%;
 }
 
