@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    width: 100vw;
+    
 }
 
 * {
@@ -49,7 +49,7 @@ body {
 
 @font-face {
     font-family: cute;
-    src: url(./fles/Cutewritten-Regular.ttf);
+    src: url(./files/Cutewritten-Regular.ttf);
 }
 
 @font-face {
