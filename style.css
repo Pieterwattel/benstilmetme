@@ -144,7 +144,7 @@ textarea{
 }
 
 .reviewcontent {
-    max-width: 800px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
 }
@@ -163,4 +163,7 @@ button {
     border-radius: 10px;
     font-size: 40px;
     text-align: center;
+    font-family: hpsfRg;
+    box-shadow: 2px;
+    filter: drop-shadow(1px 2px 3px black);
 }
