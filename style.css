@@ -22,9 +22,9 @@
     flex-basis: 1;
 }
 
-/* * {
+* {
     outline: 2px solid red;
-} */
+}
 
 
 /* end standard selectors */
@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    
+
 }
 
 * {
