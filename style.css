@@ -66,9 +66,11 @@ html {
 
 .maincontent {
     margin-top: 10vh;
-    margin-left: 17%;
-    margin-right: 17%;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .center {
@@ -77,6 +79,9 @@ html {
 }
 
 .header {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -86,6 +91,10 @@ html {
     justify-content: center;
     align-content: center;
 
+}
+
+.header video{
+    max-width: 1000px;
 }
 
 .reviews {
@@ -99,20 +108,9 @@ html {
 
 textarea{
     height: 160px;
-    width: 60%;
     min-width: 260px !important;
     margin-top: 80px;
     margin-bottom: 20px;
-}
-
-button {
-    margin: 90px;
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 40px;
-    text-align: center;
 }
 
 .header,
@@ -145,7 +143,24 @@ button {
     margin-top: 10px;*/
 }
 
+.reviewcontent {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
 .reviewcontent .text {
     font-family: cute;
     min-width: 250px;
+    align-self: center;
+}
+
+button {
+    margin: 90px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
 }
