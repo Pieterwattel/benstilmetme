@@ -79,7 +79,6 @@ html {
 }
 
 .header {
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     width: 100%;
