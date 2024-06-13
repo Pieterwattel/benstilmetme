@@ -107,6 +107,8 @@ textarea{
 
 button {
     margin: 90px;
+    margin-left: 150px;
+    margin-right: 150px;
     background-color: white;
     border-radius: 10px;
     font-size: 40px;
