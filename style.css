@@ -114,8 +114,6 @@ body {
 }
 
 .reviewcontent {
-    margin-left: 0.01vw;
-    margin-right: 0.01vw;
 }
 
 textarea{
@@ -174,13 +172,13 @@ a {
 }
 
 .header2 a {
+    font-size: 230%;
     padding: 0.1em 0.18em 0.1em 0.18em;
     text-align: center;
     border: 2px solid grey;
     border-radius: 0.4em;
     box-shadow: 2px;
     filter: drop-shadow(1px 2px 3px black);
-    font-size: calc(15vw/3);
 }
 
 .footerbox {
@@ -192,7 +190,7 @@ border: 2px solid rebeccapurple;
     flex:1;
     justify-content: space-between;
     margin: 5%;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     text-decoration:underline;
 }
 
