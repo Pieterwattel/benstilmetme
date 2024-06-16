@@ -79,7 +79,7 @@ body {
 
 .header2 {
     z-index: 2;
-    margin-top: 5ch;
+    margin-top: 10vh;
     display:flex;
     justify-content: center;
     width: 100%;
