@@ -114,9 +114,8 @@ body {
 }
 
 .reviewcontent {
-    margin-left: 0.1vw;
-    margin-right: 0.1vw;
-    border: 1px solid red;
+    margin-left: 0.01vw;
+    margin-right: 0.01vw;
 }
 
 textarea{
