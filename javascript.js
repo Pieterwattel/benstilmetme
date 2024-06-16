@@ -29,3 +29,4 @@ window.addEventListener('scroll', () => {
     const video = document.querySelector('.scrolltext');
     video.style.opacity = videoOpacity;
 });
+

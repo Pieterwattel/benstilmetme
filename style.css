@@ -69,7 +69,7 @@ body {
 }
 
 .maincontent {
-    margin-top: 10vh;
+    margin-top: 40px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -77,10 +77,14 @@ body {
     padding-right: 18%;
 }
 
-.center {
+.header2 {
+    z-index: 2;
+    margin-top: 5ch;
     display:flex;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
+    position: sticky;
+    top: 90vh;
 }
 
 .header {
@@ -160,9 +164,6 @@ textarea{
 }
 
 a {
-    margin: 90px;
-    margin-left: 150px;
-    margin-right: 150px;
     padding: 0px 5px 0px 5px;
     background-color: white;
     font-size: 40px;
@@ -174,6 +175,8 @@ a {
     filter: drop-shadow(1px 2px 3px black);
     text-decoration: none;
     color: black;
+}
+
 }
 
 button{
