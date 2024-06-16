@@ -78,13 +78,15 @@ body {
 }
 
 .header2 {
+    display: flex;
+    flex: 1;
     z-index: 2;
     margin-top: 10vh;
     display:flex;
     justify-content: center;
     width: 100%;
     position: sticky;
-    top: 90vh;
+    top: 3vh;
 }
 
 .header {
@@ -172,7 +174,7 @@ a {
 
 .header2 a {
     padding: 0px 5px 0px 5px;
-    font-size: 45px;
+    font-size: 230%;
     text-align: center;
     border: 2px solid grey;
     border-radius: 10px;
