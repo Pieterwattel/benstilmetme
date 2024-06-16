@@ -114,6 +114,9 @@ body {
 }
 
 .reviewcontent {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 1px solid red;
 }
 
 textarea{
@@ -161,7 +164,6 @@ textarea{
 
 .reviewcontent .text {
     font-family: cute;
-    min-width: 250px;
     align-self: center;
 }
 
