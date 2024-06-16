@@ -87,6 +87,7 @@ body {
     width: 100%;
     position: sticky;
     top: 3vh;
+    font-size: min(3vw,40px);
 }
 
 .header {
