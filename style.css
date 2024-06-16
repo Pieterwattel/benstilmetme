@@ -39,7 +39,7 @@ body {
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(15px + 1vw);
+    font-size: calc(20px + 1vw);
 }
 
 @font-face {
@@ -100,7 +100,6 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
 
 .header video{
@@ -114,6 +113,8 @@ body {
 }
 
 .reviewcontent {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 textarea{
@@ -153,15 +154,13 @@ textarea{
     margin-top: 10px;*/
 }
 
-.reviewcontent {
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-}
-
 .reviewcontent .text {
     font-family: cute;
+    width: max(600px 60vw);
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(800px+0.2vw);
 }
 
 a {
