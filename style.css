@@ -87,7 +87,7 @@ body {
     width: 100%;
     position: sticky;
     top: 3vh;
-    font-size: min(3vw,40px);
+    font-size: 2vw;
 }
 
 .header {
@@ -181,6 +181,11 @@ a {
     filter: drop-shadow(1px 2px 3px black);
 }
 
+.whitetext {
+    font-size: 1px;
+    color: white;
+}
+
 .footerbox {
 border: 2px solid rebeccapurple;
 }
@@ -191,6 +196,11 @@ border: 2px solid rebeccapurple;
     justify-content: space-between;
     margin: 5%;
     padding-bottom: 12px;
+}
+
+.footer > a{
+    font-size: 80%;
+
     text-decoration:underline;
 }
 
