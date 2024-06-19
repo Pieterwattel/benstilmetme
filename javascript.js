@@ -16,6 +16,21 @@ window.addEventListener('scroll', () => {
     video.style.opacity = videoOpacity;
 });
 
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const header = document.querySelector('.scrolltext');
+    const headerHeight = header.offsetHeight;
+    
+    // Define the start and end points for the fade-out effect
+    const fadeStart = headerHeight / 2;
+    const fadeEnd = headerHeight * 2;
+    
+    // Calculate the fade fraction based on scroll position
+    const fadeFraction = (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+    const newOpacity = 1 - Math.min(Math.max(fadeFraction, 0), 1);
+    
+    header.style.opacity = newOpacity;
+});
 
 document.body.addEventListener("touchstart", function () {
     var allVideos = document.querySelectorAll('video');
