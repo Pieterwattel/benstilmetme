@@ -73,8 +73,8 @@ body {
     padding: 10px;
     display: flex;
     justify-content: center;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: calc(25vw - 120px);
+    padding-right: calc(25vw - 120px);
 }
 
 .header2 {
