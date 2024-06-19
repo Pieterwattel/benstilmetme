@@ -125,13 +125,22 @@ textarea{
     margin-bottom: 20px;
 }
 
-.header,
-.scrolltext {
+.header {
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function:ease-out;
     animation-duration: 2s;
+}
+
+.scrolltext {
+    opacity: 0;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-out;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode:both;
 }
 
 @keyframes fadeInOpacity {
@@ -199,7 +208,7 @@ border: 2px solid rebeccapurple;
 }
 
 .footer > a{
-    font-size: 80%;
+    font-size: 75%;
 
     text-decoration:underline;
 }
