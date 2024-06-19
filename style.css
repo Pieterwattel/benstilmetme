@@ -209,7 +209,7 @@ border: 2px solid rebeccapurple;
 }
 
 .footer > a{
-    font-size: 75%;
+    font-size: calc(75% - 4px);
 
     text-decoration:underline;
 }
