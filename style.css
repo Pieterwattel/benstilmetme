@@ -134,13 +134,14 @@ textarea{
 }
 
 .scrolltext {
+    font-size: 100%;
     opacity: 0;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function:ease-out;
     animation-duration: 2s;
     animation-delay: 3.5s;
-    animation-fill-mode:both;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInOpacity {
