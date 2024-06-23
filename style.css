@@ -171,7 +171,7 @@ textarea{
     align-self: center;
     display: flex;
     flex-direction: column;
-    font-size: calc(40px + 0.3vw);
+    font-size: calc(50px + 0.2vw);
 }
 
 a {
