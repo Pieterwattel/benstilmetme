@@ -167,11 +167,11 @@ textarea{
 
 .reviewcontent .text {
     font-family: cute;
-    width: max(600px 60vw);
+    width: (600px, 60vw);
     align-self: center;
     display: flex;
     flex-direction: column;
-    font-size: calc(800px+0.2vw);
+    font-size: calc(40px + 0.3vw);
 }
 
 a {
