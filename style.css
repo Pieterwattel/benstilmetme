@@ -73,8 +73,8 @@ body {
     padding: 10px;
     display: flex;
     justify-content: center;
-    padding-left: calc(25vw - 120px);
-    padding-right: calc(25vw - 120px);
+    padding-left: calc(30vw - 150px);
+    padding-right: calc(30vw - 150px);
 }
 
 .header2 {
@@ -182,7 +182,7 @@ a {
 }
 
 .header2 a {
-    font-size: 230%;
+    font-size: calc(25px + 1.2vw);
     padding: 0.1em 0.18em 0.1em 0.18em;
     text-align: center;
     border: 2px solid grey;
