@@ -5,15 +5,18 @@
         <meta charset="utf-8">
         <title>ben Stil met me</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./javascript.js"></script>
+        <script src="./javascript.js defer"></script>
 
     </head>
     <body>
         <div class="header">
-        <video width="100%" height="auto" autoplay loop muted playsinline>
+        <img autoplay loop muted playsinline id="vid" width="100%" height="auto">
             <source src="./files/titlemovie.mp4" type="video/mp4">
-        </video>
+        </img>
         </div>
+        <script>
+            document.getElementById('vid').play();
+        </script>
 
         <div class="scrolltext">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scroll down &#x2193;
