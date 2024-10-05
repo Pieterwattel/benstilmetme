@@ -17,17 +17,14 @@ window.addEventListener('scroll', () => {
 });
 
 setTimeout(() => {
-    console.log(window.scrollY)
     let emptyText = document.getElementById("emptyText")
     let body = document.querySelector("body")
     if (window.scrollY < 100){
-            console.log("code run")
             let scrollText = document.createElement("div")
             scrollText.classList.add("scrollText")
             scrollText.textContent=("     scroll down ↓")
             body.insertBefore(scrollText, emptyText)
             emptyText.remove()
-            console.log()
     } else {
         return
     }

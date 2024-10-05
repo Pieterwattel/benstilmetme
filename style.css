@@ -34,7 +34,6 @@ html {
 }
 
 body {
-
 }
 
 * {
@@ -62,11 +61,26 @@ body {
     src: url(./files/HPSimplified_Rg.ttf);
 }
 
+.scrollText{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: hpsfrg;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 .scrollText,
 .emptyText {
     text-align: center;
-    margin-top: 90vh;
+    margin-top: 0;
     font-family: hpsfrg;
+    text-align: center;
 }
 
 .maincontent {
@@ -80,12 +94,11 @@ body {
 
 .header2 {
     display: flex;
-    flex: 1;
     z-index: 2;
-    margin-top: 10vh;
-    display:flex;
+    margin-top: 100vh;  /* This ensures it appears just after the first viewport */
     justify-content: center;
     width: 100%;
+    font-size: 2vw;
     position: sticky;
     top: 3vh;
     font-size: 2vw;
@@ -111,7 +124,7 @@ body {
 .reviews {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 200px;
 }
 
 .reviewcontent {
@@ -172,25 +185,49 @@ textarea{
     align-self: center;
     display: flex;
     flex-direction: column;
-    font-size: calc(50px + 0.2vw);
+    font-size: calc(50px - 0.6vw);
 }
 
-a {
+.header2 > * {
     background-color: white;
-    font-family: hpsfRg;
     text-decoration: none;
     color: black;
 }
 
-.header2 a {
-    font-size: calc(25px + 1.2vw);
-    padding: 0.1em 0.18em 0.1em 0.18em;
-    text-align: center;
+.box {
     border: 2px solid grey;
-    border-radius: 0.4em;
+    border-radius: 0.5em;
     box-shadow: 2px;
     filter: drop-shadow(1px 2px 3px black);
+    font-family: hpsfRg;
 }
+
+.userInput{
+    font-size: calc(15px + 0.5vw);
+    height: max(calc(3vw), 40px);
+    width: max(26vw, 380px);
+}
+
+.inputContainer{
+    width: max(26vw 1000px);
+    border-radius: 0.5em;
+    height: calc(3vw);
+}
+
+#experienceInput{
+    border: none;
+    border-radius: 0.6em;
+    margin: 2px;
+}
+
+.userInput::placeholder {
+    text-align: center;
+    font-size: calc(25px + 1.2vw);
+    padding: 0.1em 0.18em 0.1em 0.18em;
+    font-size: max(calc(2vw + 10px), 35px)
+}
+
+
 
 .whitetext {
     font-size: 1px;
