@@ -16,33 +16,19 @@ window.addEventListener('scroll', () => {
     video.style.opacity = videoOpacity;
 });
 
-window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const header = document.querySelector('.scrolltext');
-    const headerHeight = header.offsetHeight;
-    
-    // Define the start and end points for the fade-out effect
-    const fadeStart = headerHeight / 2;
-    const fadeEnd = headerHeight * 2;
-    
-    // Calculate the fade fraction based on scroll position
-    const fadeFraction = (scrollTop - fadeStart) / (fadeEnd - fadeStart);
-    const newOpacity = 1 - Math.min(Math.max(fadeFraction, 0), 1);
-    
-    header.style.opacity = newOpacity;
-});
-
-var allVideos = document.querySelectorAll('vid');
-document.body.addEventListener("touchstart", function () {
-
-    for (var i = 0; i < allVideos.length; i++) {
-        allVideos[i].play();
+setTimeout(() => {
+    console.log(window.scrollY)
+    let emptyText = document.getElementById("emptyText")
+    let body = document.querySelector("body")
+    if (window.scrollY < 100){
+            console.log("code run")
+            let scrollText = document.createElement("div")
+            scrollText.classList.add("scrollText")
+            scrollText.textContent=("     scroll down ↓")
+            body.insertBefore(scrollText, emptyText)
+            emptyText.remove()
+            console.log()
+    } else {
+        return
     }
-},{ once: true });
-
-allVideos.play();
-
-
-let div = document.createElement("div")
-document.body.appendChild(div)
-alert(div)
+}, 2000);

@@ -62,7 +62,8 @@ body {
     src: url(./files/HPSimplified_Rg.ttf);
 }
 
-.scrolltext {
+.scrollText,
+.emptyText {
     text-align: center;
     margin-top: 90vh;
     font-family: hpsfrg;
@@ -133,14 +134,14 @@ textarea{
     animation-duration: 2s;
 }
 
-.scrolltext {
+.scrollText,
+.emptyText {
     font-size: 100%;
     opacity: 0;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function:ease-out;
     animation-duration: 2s;
-    animation-delay: 3.5s;
     animation-fill-mode: forwards;
 }
 
