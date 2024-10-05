@@ -132,13 +132,6 @@ body {
     margin-right: 5px;
 }
 
-textarea{
-    height: 160px;
-    min-width: 260px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
 .header {
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -204,27 +197,28 @@ textarea{
 
 .userInput{
     font-size: calc(15px + 0.5vw);
-    height: max(calc(3vw), 40px);
-    width: max(26vw, 380px);
 }
 
 .inputContainer{
-    width: max(26vw 1000px);
-    border-radius: 0.5em;
-    height: calc(3vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #experienceInput{
     border: none;
     border-radius: 0.6em;
-    margin: 2px;
+    min-height: calc(3vw);
+    width: max(15vw + 200px, 320px);
+    margin-top: 5px;
 }
 
 .userInput::placeholder {
     text-align: center;
-    font-size: calc(25px + 1.2vw);
+    vertical-align: middle;
+    font-size: calc(22px + 0.9vw);
     padding: 0.1em 0.18em 0.1em 0.18em;
-    font-size: max(calc(2vw + 10px), 35px)
+    font-size: max(calc(2vw + 6px), 32px0;
 }
 
 
