@@ -22,10 +22,40 @@ setTimeout(() => {
     if (window.scrollY < 100){
             let scrollText = document.createElement("div")
             scrollText.classList.add("scrollText")
-            scrollText.textContent=("     scroll down ↓")
+            scrollText.textContent=("      scroll down ↓")
             body.insertBefore(scrollText, emptyText)
             emptyText.remove()
     } else {
         return
     }
 }, 2000);
+
+let experienceInput = document.getElementById("experienceInput")
+let inputContainer = document.getElementById("inputContainer")
+
+let onceValue = true
+experienceInput.addEventListener("click", ()=> typeExperience(), {once: onceValue})
+
+function typeExperience (){
+    experienceInput.style.height="200px"
+//  add name text field
+    let inputBottom = document.getElementById("inputBottom")
+
+//  add nameInput    
+    let nameInput = document.createElement("input")
+    nameInput.classList.add("userInput")
+    nameInput.classList.add("fadeIn")
+    nameInput.setAttribute('id', "nameInput")
+    nameInput.setAttribute('placeholder', "name.. (optional)")
+    inputBottom.appendChild(nameInput)
+
+//  add shareButton
+    let sendExperience = document.createElement("button")
+    sendExperience.setAttribute('id', "sendExperience")
+    sendExperience.classList.add("fadeIn")
+    sendExperience.textContent="share"
+    inputBottom.appendChild(sendExperience)
+}
+
+//<input class="userInput" id="nameInput" placeholder="name.. (optional)"></input>
+//<button id="sendExperience">share</button>
