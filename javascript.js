@@ -40,7 +40,8 @@ function typeExperience (){
     experienceInput.style.height="200px"
 //  add name text field
     let inputBottom = document.getElementById("inputBottom")
-
+}
+    /*
 //  add nameInput    
     let nameInput = document.createElement("input")
     nameInput.classList.add("userInput")
@@ -56,6 +57,4 @@ function typeExperience (){
     sendExperience.textContent="share"
     inputBottom.appendChild(sendExperience)
 }
-
-//<input class="userInput" id="nameInput" placeholder="name.. (optional)"></input>
-//<button id="sendExperience">share</button>
+*/

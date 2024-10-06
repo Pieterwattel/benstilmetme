@@ -24,11 +24,29 @@
         </div>
 
         <div class="header2" >
-            <div id="inputContainer" class="box">
-                <textarea id="experienceInput" class="userInput" placeholder="share your experience"></textarea>
+            <form
+            id="inputContainer" 
+            class="box"
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbwSHSrotuHhlZ3L1nwg07wmYvjaBYkq_PIl2p0RkOOFBXIZxXaT_ONsnh4oZ431IiEj/exec">
+                <textarea 
+                    name="Email" 
+                    id="experienceInput" 
+                    class="userInput" 
+                    placeholder="share your experience"></textarea>
                 <div id="inputBottom">
+                    <input 
+                        name="Name" 
+                        class="userInput" 
+                        id="nameInput" 
+                        placeholder="name.. (optional)"></input>
+                    <button 
+                        id="sendExperience"
+                        type="submit">share
+                    </button>
                 </div>
-            </div>
+            </form>
+
         </div>
 
         <div class="maincontent">
