@@ -16,9 +16,12 @@ window.addEventListener('scroll', () => {
     video.style.opacity = videoOpacity;
 });
 
+
+let body = document.querySelector("body")
+
 setTimeout(() => {
     let emptyText = document.getElementById("emptyText")
-    let body = document.querySelector("body")
+
     if (window.scrollY < 100){
             let scrollText = document.createElement("div")
             scrollText.classList.add("scrollText")
@@ -33,14 +36,19 @@ setTimeout(() => {
 let experienceInput = document.getElementById("experienceInput")
 let inputContainer = document.getElementById("inputContainer")
 
-let onceValue = true
-experienceInput.addEventListener("click", ()=> typeExperience(), {once: onceValue})
+inputContainer.addEventListener("focusin", ()=> typeExperience())
+
+inputContainer.addEventListener("focusout", ()=> minimizeExperience())
+
 
 function typeExperience (){
     experienceInput.style.height="200px"
-//  add name text field
-    let inputBottom = document.getElementById("inputBottom")
 }
+
+function minimizeExperience(){
+    experienceInput.style.height=""
+
+
     /*
 //  add nameInput    
     let nameInput = document.createElement("input")
@@ -58,3 +66,19 @@ function typeExperience (){
     inputBottom.appendChild(sendExperience)
 }
 */
+
+window.addEventListener("load", function() {
+    const form = document.getElementById('inputContainer');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+        method: 'POST',
+        body: data,
+      })
+      .then(() => {
+        alert("Success!");
+      })
+    });
+  });

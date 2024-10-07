@@ -211,10 +211,11 @@ body {
 }
 
 .inputContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0px;
+}
+
+.heightenForm{
+    height: 200px;
 }
 
 #inputBottom{
@@ -229,6 +230,8 @@ body {
     height: 28px;
     border-radius: 0.4em;
     margin: 1px 6px 0px 6px;
+    display: flex;
+    justify-content: center;
 }
 
 #experienceInput{
@@ -257,7 +260,7 @@ body {
     vertical-align: middle;
     font-size: calc(22px + 0.9vw);
     padding: 0.1em 0.18em 0.1em 0.18em;
-    font-size: max(calc(2vw + 6px), 32px0;
+    font-size: max(calc(2vw + 6px), 32px0);
 }
 
 
@@ -282,11 +285,16 @@ border: 2px solid rebeccapurple;
 }
 
 a {
-    font-size: 2px;
-    background-color: black;
-    text-decoration:underline;
+    font-size: calc(15px + 0.5vw);
+    text-decoration: none;
+    color: black;
 }
 
-button{
-
+.button{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(207, 207, 207);
+    vertical-align: top;
+    padding: 3px 10px 3px 10px;
+    border-radius: 0.4em;
 }
