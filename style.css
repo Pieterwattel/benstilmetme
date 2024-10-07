@@ -232,6 +232,7 @@ body {
     margin: 1px 6px 0px 6px;
     display: flex;
     justify-content: center;
+    font-family: hpsfRg;
 }
 
 #experienceInput{

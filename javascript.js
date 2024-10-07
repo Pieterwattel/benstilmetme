@@ -1,6 +1,33 @@
+// GLOBAL VARIABLE DECLARATIONS
+
+let body = document.querySelector("body")
+
+
+//NODE DECLARATIONS
+let experienceInput = document.getElementById("experienceInput")
+let inputContainer = document.getElementById("inputContainer")
+let buttons = document.querySelectorAll(".button");
+
+//EVENTLISTENERS
+inputContainer.addEventListener("focusin", ()=> typeExperience())
+inputContainer.addEventListener("focusout", ()=> minimizeExperience())
+
+buttons.forEach(button=>{
+    button.addEventListener("mouseover", ()=>darkenBorder(button))
+    button.addEventListener("mouseout", ()=>lightenBorder(button))
+    button.addEventListener("mousedown", ()=>darken(button))
+    button.addEventListener("mousedown", ()=>addShadow(button))
+    button.addEventListener("mouseup", ()=>lighten(button))
+    button.addEventListener("mouseup", ()=>removeShadow(button))
+})
+
+body.style.backgroundcolor="blue"
+
+//FUNCTIONS
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
+
 
 window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY;
@@ -16,9 +43,6 @@ window.addEventListener('scroll', () => {
     video.style.opacity = videoOpacity;
 });
 
-
-let body = document.querySelector("body")
-
 setTimeout(() => {
     let emptyText = document.getElementById("emptyText")
 
@@ -33,14 +57,6 @@ setTimeout(() => {
     }
 }, 2000);
 
-let experienceInput = document.getElementById("experienceInput")
-let inputContainer = document.getElementById("inputContainer")
-
-inputContainer.addEventListener("focusin", ()=> typeExperience())
-
-inputContainer.addEventListener("focusout", ()=> minimizeExperience())
-
-
 function typeExperience (){
     experienceInput.style.height="200px"
 }
@@ -48,6 +64,31 @@ function typeExperience (){
 function minimizeExperience(){
     experienceInput.style.height=""
 }
+
+function darkenBorder(item) {
+    item.style.border="2px solid rgb(69, 69, 69)"
+}
+
+function lightenBorder(item) {
+    item.style.border=""
+}
+
+function darken(item) {
+    item.style.backgroundColor = "rgb(207, 207, 207)";
+}
+
+function lighten(item) {
+    item.style.backgroundColor=""
+}
+
+function addShadow(item){
+    item.style.boxShadow="inset 0.5px 1px 1px black"
+}
+
+function removeShadow(item){
+    item.style.boxShadow=""
+}
+
 
     /*
 //  add nameInput    
@@ -67,6 +108,8 @@ function minimizeExperience(){
 }
 */
 
+
+//removes the extra screen when a form is sent
 window.addEventListener("load", function() {
     const form = document.getElementById('inputContainer');
     form.addEventListener("submit", function(e) {
