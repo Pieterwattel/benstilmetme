@@ -7,9 +7,11 @@ let body = document.querySelector("body")
 let experienceInput = document.getElementById("experienceInput")
 let inputContainer = document.getElementById("inputContainer")
 let buttons = document.querySelectorAll(".button");
+let resizeInputOnce = true
 
 //EVENTLISTENERS
 inputContainer.addEventListener("focusin", ()=> typeExperience())
+inputContainer.addEventListener("mouseover", ()=> typeExperience(), {once: resizeInputOnce})
 inputContainer.addEventListener("focusout", ()=> minimizeExperience())
 
 buttons.forEach(button=>{
@@ -63,6 +65,7 @@ function typeExperience (){
 
 function minimizeExperience(){
     experienceInput.style.height=""
+    experienceInput.style.width="max(15vw + 200px, 320px)"
 }
 
 function darkenBorder(item) {
