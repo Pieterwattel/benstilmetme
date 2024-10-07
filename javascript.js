@@ -75,16 +75,20 @@ setTimeout(() => {
 
 function typeExperience (e){
     if (e.target.id != 'nameInput') {
-        console.log("height changed")
         experienceInput.style.height="200px"
     } else {
-        console.log("name input clicked")
     }
 }
 
-function minimizeExperience(){
+function minimizeExperience(e){
+/*
+        console.log("minimize experience" + e.target.id)
+        if (e.target.id != "nameInput" || e.target.id != "experienceInput") {
+            console.log("minimized")
         experienceInput.style.height=""
         experienceInput.style.width="max(15vw + 200px, 320px)"
+        } else {
+        }*/
 }
 
 function darkenBorder(item) {
