@@ -211,6 +211,7 @@ body {
 }
 
 .inputContainer{
+    position: absolute;
     padding: 0px;
 }
 
@@ -283,6 +284,7 @@ border: 2px solid rebeccapurple;
     justify-content: space-between;
     margin: 5%;
     padding-bottom: 12px;
+    align-items:flex-end
 }
 
 a {
@@ -299,3 +301,39 @@ a {
     padding: 3px 10px 3px 10px;
     border-radius: 0.4em;
 }
+
+.input{
+    border: 2px solid rgb(207, 207, 207);
+    vertical-align: top;
+    padding: 3px 10px 3px 10px;
+    border-radius: 0.4em;
+}
+
+#buttonPiet{
+    font-size: calc(15px + 0.5vw);
+    text-decoration: none;
+    color: black;
+}
+
+  /* Dynamic HSL Rainbow Animation */
+  @keyframes dynamic-rainbow {
+    0% {
+      background-color: hsl(0, 100%, 50%);
+    }
+    50% {
+      background-color: hsl(180, 100%, 50%);
+    }
+    100% {
+      background-color: hsl(360, 100%, 50%);
+    }
+  }
+  
+  .rainbow {
+    animation: dynamic-rainbow 5s linear infinite; /* Increased duration */
+  
+    /* Cross-Browser Compatibility */
+    -webkit-animation: dynamic-rainbow 5s linear infinite;
+    -moz-animation: dynamic-rainbow 5s linear infinite;
+    -o-animation: dynamic-rainbow 5s linear infinite;
+  }
+  

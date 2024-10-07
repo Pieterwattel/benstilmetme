@@ -7,12 +7,26 @@ let body = document.querySelector("body")
 let experienceInput = document.getElementById("experienceInput")
 let inputContainer = document.getElementById("inputContainer")
 let buttons = document.querySelectorAll(".button");
+let buttonPiet = document.getElementById("buttonPiet")
 let resizeInputOnce = true
+let giveMail = true
 
 //EVENTLISTENERS
-inputContainer.addEventListener("focusin", ()=> typeExperience())
-inputContainer.addEventListener("mouseover", ()=> typeExperience(), {once: resizeInputOnce})
-inputContainer.addEventListener("focusout", ()=> minimizeExperience())
+inputContainer.addEventListener("focusin", typeExperience)
+inputContainer.addEventListener("mouseover", typeExperience, {once: resizeInputOnce})
+inputContainer.addEventListener("focusout", minimizeExperience)
+buttonPiet.addEventListener("click", ()=>{
+    if (giveMail){
+        buttonPiet.textContent="pieterwattel@gmail.com"
+        buttonPiet.classList.add("rainbow")
+        giveMail=false
+    } else{
+        buttonPiet.textContent="Webpage by Pieter Wattel"
+        buttonPiet.classList.remove("rainbow")
+        giveMail=true
+    }
+})
+
 
 buttons.forEach(button=>{
     button.addEventListener("mouseover", ()=>darkenBorder(button))
@@ -59,13 +73,18 @@ setTimeout(() => {
     }
 }, 2000);
 
-function typeExperience (){
-    experienceInput.style.height="200px"
+function typeExperience (e){
+    if (e.target.id != 'nameInput') {
+        console.log("height changed")
+        experienceInput.style.height="200px"
+    } else {
+        console.log("name input clicked")
+    }
 }
 
 function minimizeExperience(){
-    experienceInput.style.height=""
-    experienceInput.style.width="max(15vw + 200px, 320px)"
+        experienceInput.style.height=""
+        experienceInput.style.width="max(15vw + 200px, 320px)"
 }
 
 function darkenBorder(item) {
@@ -124,7 +143,8 @@ window.addEventListener("load", function() {
         body: data,
       })
       .then(() => {
-        alert("Success!");
       })
     });
-  });
+});
+
+  
