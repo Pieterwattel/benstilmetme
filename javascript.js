@@ -47,7 +47,7 @@ function typeExperience (){
 
 function minimizeExperience(){
     experienceInput.style.height=""
-
+}
 
     /*
 //  add nameInput    
