@@ -19,10 +19,15 @@ buttonPiet.addEventListener("click", ()=>{
     if (giveMail){
         buttonPiet.textContent="pieterwattel@gmail.com"
         buttonPiet.classList.add("rainbow")
+        buttonPiet.style.color="white"
+        buttonPiet.style.textShadow="black 2px 2px 2px"
+
         giveMail=false
     } else{
         buttonPiet.textContent="Webpage by Pieter Wattel"
+        buttonPiet.style.color=""
         buttonPiet.classList.remove("rainbow")
+        buttonPiet.style.textShadow=""
         giveMail=true
     }
 })
@@ -81,14 +86,13 @@ function typeExperience (e){
 }
 
 function minimizeExperience(e){
-/*
         console.log("minimize experience" + e.target.id)
         if (e.target.id != "nameInput" || e.target.id != "experienceInput") {
             console.log("minimized")
         experienceInput.style.height=""
         experienceInput.style.width="max(15vw + 200px, 320px)"
         } else {
-        }*/
+        }
 }
 
 function darkenBorder(item) {
