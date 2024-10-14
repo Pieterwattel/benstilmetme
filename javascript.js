@@ -4,6 +4,9 @@ let body = document.querySelector("body")
 
 
 //NODE DECLARATIONS
+let nameInput = document.getElementById("nameInput")
+let sendExperience = document.getElementById("sendExperience")
+
 let experienceInput = document.getElementById("experienceInput")
 let inputContainer = document.getElementById("inputContainer")
 let buttons = document.querySelectorAll(".button");
@@ -138,6 +141,23 @@ function removeShadow(item){
 }
 */
 
+sendExperience.addEventListener("click", function(){
+    if (experienceInput.value != ""){
+        sendExperience.classList.add("fadeOut")
+        nameInput.classList.add("fadeOut")
+        setTimeout(() => {
+            sendExperience.remove();
+            nameInput.remove();
+        }, "1500");      
+    }
+})
+
+function shareSucces(){    
+    experienceInput.value = ""
+    experienceInput.placeholder="Experience sent: \n thank you for sharing!"
+    experienceInput.style.height="100px"
+
+}
 
 //removes the extra screen when a form is sent
 window.addEventListener("load", function() {
@@ -151,6 +171,7 @@ window.addEventListener("load", function() {
         body: data,
       })
       .then(() => {
+        shareSucces()
       })
     });
 });
