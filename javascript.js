@@ -2,7 +2,7 @@
 
 let body = document.querySelector("body")
 
-let minimizeExperienceContainer = true
+let minimizeExperienceFlag = true
 
 //NODE DECLARATIONS
 let nameInput = document.getElementById("nameInput")
@@ -175,6 +175,7 @@ window.addEventListener("load", function() {
       .then(() => {
         shareSucces()
         minimizeExperienceFlag = false
+        console.log("minimizeExperienceFlag is false")
       })
     });
 });
