@@ -2,6 +2,7 @@
 
 let body = document.querySelector("body")
 
+let minimizeExperienceContainer = true
 
 //NODE DECLARATIONS
 let nameInput = document.getElementById("nameInput")
@@ -17,7 +18,11 @@ let giveMail = true
 //EVENTLISTENERS
 inputContainer.addEventListener("focusin", typeExperience)
 inputContainer.addEventListener("mouseover", typeExperience, {once: resizeInputOnce})
-inputContainer.addEventListener("focusout", minimizeExperience)
+document.body.addEventListener("click",  function(e){
+    if (!e.target.classList.contains("experience")){
+        minimizeExperience()
+    }
+})
 buttonPiet.addEventListener("click", ()=>{
     if (giveMail){
         buttonPiet.textContent="pieterwattel@gmail.com"
@@ -89,13 +94,10 @@ function typeExperience (e){
 }
 
 function minimizeExperience(e){
-        console.log("minimize experience" + e.target.id)
-        if (e.target.id != "nameInput" || e.target.id != "experienceInput") {
-            console.log("minimized")
+    if (minimizeExperienceFlag){
         experienceInput.style.height=""
         experienceInput.style.width="max(15vw + 200px, 320px)"
-        } else {
-        }
+    }
 }
 
 function darkenBorder(item) {
@@ -148,7 +150,7 @@ sendExperience.addEventListener("click", function(){
         setTimeout(() => {
             sendExperience.remove();
             nameInput.remove();
-        }, "1500");      
+        }, "1200");      
     }
 })
 
@@ -172,6 +174,7 @@ window.addEventListener("load", function() {
       })
       .then(() => {
         shareSucces()
+        minimizeExperienceFlag = false
       })
     });
 });

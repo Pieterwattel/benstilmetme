@@ -165,7 +165,7 @@ body {
     animation-name: fadeOutOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode:both;
 }
 
