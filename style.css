@@ -100,7 +100,7 @@ nav a{
 
 .scrollText{
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     font-family: hpsfrg;
@@ -132,7 +132,7 @@ nav a{
 .header2 {
     display: flex;
     z-index: 2;
-    margin-top: 100vh;  /* This ensures it appears just after the first viewport */
+    margin-top: 103vh;  /* This ensures it appears just after the first viewport */
     justify-content: center;
     width: 100%;
     font-size: 2vw;
@@ -329,8 +329,8 @@ nav a{
     color: white;
 }
 
-.footerbox {
-border: 2px solid rebeccapurple;
+.contentLocations {
+    text-align: center;
 }
 
 .footer {
@@ -339,7 +339,8 @@ border: 2px solid rebeccapurple;
     justify-content: space-between;
     margin: 5%;
     padding-bottom: 12px;
-    align-items:flex-end
+    align-items:flex-end;
+    margin-top: 83vh;
 }
 
 a {
@@ -491,6 +492,14 @@ h2{
     #sources div span{
         margin: 0;
     }
+
+    .justifyLeft{
+        font-style:italic;
+    }
+}
+
+#sources h2 {
+    align-self: flex-start;
 }
 
 #sources{
