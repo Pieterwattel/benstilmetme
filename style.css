@@ -24,8 +24,7 @@
 
 /** {
     outline: 2px solid red;
-}*/
-
+} */
 
 /* end standard selectors */
 
@@ -34,6 +33,7 @@ html {
 }
 
 body {
+margin: 0;
 }
 
 * {
@@ -59,6 +59,43 @@ body {
 @font-face {
     font-family: hpsfrg;
     src: url(./files/HPSimplified_Rg.ttf);
+}
+
+.navFadein{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    opacity: 0;
+    animation-name: fadeInOpacity;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav a{
+    font-size: calc(10px + 2vw);
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#navAbout {
+    margin-right: 7%;
 }
 
 .scrollText{
@@ -106,7 +143,6 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -124,7 +160,7 @@ body {
 .reviews {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 130px;
 }
 
 .reviewcontent {
@@ -356,3 +392,85 @@ a {
     -o-animation: dynamic-rainbow 5s linear infinite;
   }
   
+
+/* other pages than index */
+.contentmain{
+    margin-top: calc(30vh - 150px);
+    padding-left: calc(30vw - 150px);
+    padding-right: calc(30vw - 150px);
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+p {
+    text-align: justify;
+    font-size: calc(30px - 0.3vw);
+
+}
+
+.twoItems {
+}
+
+#participateText{
+    text-align: left;
+}
+
+img{
+    width: 50%;
+    object-fit: contain;
+
+    display: inline;
+
+    border-radius: 0.2em;
+    box-shadow: 2px;
+    font-family: hpsfRg;
+    filter: drop-shadow(0.5px 0.5px 3px rgb(187, 187, 187));
+}
+
+#img1{
+    float: right;
+    margin: 0 0 0% 3%;
+}
+
+#img2{
+    float: left;
+    margin: 0 3% 0 0;
+}
+
+#initiator{
+}
+
+#initiator > *{
+
+}
+
+#sources{
+    text-align: right;
+}
+
+h2{
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .twoItems {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img1{
+        margin: 0
+    }
+
+    #img2{
+        margin: 0
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+  }
